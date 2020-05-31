@@ -29,9 +29,12 @@ class EmailAddressParser
   def parse
     parsed = list.split(' ')
     #binding.pry
-    parsed.each do |email| 
+    parsed.collect do |email| 
       if email.endwith?(',')
         email = email.substring(0, email.length() - 1)
+      else 
+        email 
+      end 
     parsed.uniq
   end 
   
