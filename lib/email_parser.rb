@@ -4,19 +4,7 @@
 # or whitespace (' ').
 require 'pry'
 =begin
-class EmailAddressParser
-  attr_accessor :list  
-  
-  def initialize(list)
-    @list = list
-  end 
-  
-  def parse
-    parsed = list.split(', ')
-    parsed.uniq
-  end 
-  
-end 
+
 =end 
 
 class EmailAddressParser
