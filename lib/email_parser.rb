@@ -28,7 +28,25 @@ end
 
 =end 
 
-
+class EmailAddressParser
+  attr_accessor :list  
+  
+  def initialize(list)
+    @list = list.split(' ')
+  end 
+  
+  def parse
+    parsed = []
+    #binding.pry
+    list.each do |email| 
+      if email.end_with?(',')
+        email = email[0...-1]
+        parsed << email
+      else 
+        parsed << email 
+      end 
+  end 
+  parsed.flatten.uniq
 
 
 
