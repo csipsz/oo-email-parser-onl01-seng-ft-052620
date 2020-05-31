@@ -28,7 +28,7 @@ class EmailAddressParser
   
   def parse
     parsed = list.split(' ')
-    binding.pry
+    #binding.pry
     parsed.uniq
   end 
   
