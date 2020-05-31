@@ -32,7 +32,7 @@ class EmailAddressParser
     #binding.pry
     parsed.each do |email| 
       if email.end_with?(',')
-        email = email[0...-2]
+        email = email[0...-1]
         parsed2 << email
       else 
         parsed2 << email 
