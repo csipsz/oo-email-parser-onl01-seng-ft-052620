@@ -2,7 +2,6 @@
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
-require 'pry'
 
 =begin
 class EmailAddressParser
@@ -27,7 +26,7 @@ end
 =end 
 
 
-=begin
+
 class EmailAddressParser
   attr_accessor :list  
   
@@ -36,7 +35,6 @@ class EmailAddressParser
   end 
   
   def parse
-    #binding.pry
     list.map do |email| 
       if email.end_with?(',')
         email = email[0...-1]
