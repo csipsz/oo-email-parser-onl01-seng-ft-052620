@@ -4,7 +4,7 @@
 # or whitespace (' ').
 require 'pry'
 
-=begin 
+
 class EmailAddressParser
   attr_accessor :list  
   
@@ -25,7 +25,7 @@ class EmailAddressParser
   end 
   parsed.flatten.uniq
 end 
-=end 
+
 
 =begin
 class EmailAddressParser
