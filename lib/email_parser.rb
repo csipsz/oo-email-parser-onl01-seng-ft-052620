@@ -14,7 +14,6 @@ class EmailAddressParser
   
   def parse
     parsed = []
-    #binding.pry
     list.each do |email| 
       if email.end_with?(',')
         email = email[0...-1]
