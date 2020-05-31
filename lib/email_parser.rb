@@ -37,5 +37,5 @@ class EmailAddressParser
       end 
     parsed.uniq
   end 
-  
+end 
 end 
