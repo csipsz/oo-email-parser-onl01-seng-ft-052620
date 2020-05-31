@@ -30,7 +30,7 @@ class EmailAddressParser
     parsed = list.split(' ')
     #binding.pry
     parsed.collect do |email| 
-      if email.endwith?(',')
+      if email.end_with?(',')
         email = email.substring(0, email.length() - 1)
       else 
         email 
