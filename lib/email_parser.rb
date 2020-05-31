@@ -67,7 +67,7 @@ class EmailAddressParser
         email 
       end 
   end 
-  list.flatten.uniq
+  .flatten.uniq
 end 
 
 
