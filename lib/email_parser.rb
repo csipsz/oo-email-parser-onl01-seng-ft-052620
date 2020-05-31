@@ -28,6 +28,7 @@ end
 
 =end 
 
+=begin 
 class EmailAddressParser
   attr_accessor :list  
   
@@ -48,6 +49,9 @@ class EmailAddressParser
   end 
   parsed.flatten.uniq
 end 
+=end 
+
+
 
 
 
