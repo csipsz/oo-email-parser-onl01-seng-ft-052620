@@ -19,4 +19,17 @@ class EmailAddressParser
 end 
 =end 
 
-
+class EmailAddressParser
+  attr_accessor :list  
+  
+  def initialize(list)
+    @list = list
+  end 
+  
+  def parse
+    parsed = list.split(' ')
+    binding.pry
+    parsed.uniq
+  end 
+  
+end 
