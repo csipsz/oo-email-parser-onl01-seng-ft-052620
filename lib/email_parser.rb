@@ -29,6 +29,8 @@ class EmailAddressParser
   def parse
     parsed = list.split(' ')
     #binding.pry
+    parsed.each do |email| 
+      if email.endswi
     parsed.uniq
   end 
   
