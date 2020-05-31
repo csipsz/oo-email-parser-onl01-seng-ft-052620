@@ -31,7 +31,7 @@ class EmailAddressParser
     #binding.pry
     parsed.collect do |email| 
       if email.end_with?(',')
-        email = email[0...-2)
+        email = email[0...-2]
       else 
         email 
       end 
