@@ -42,7 +42,7 @@ class EmailAddressParser
         email 
       end 
   end 
-  .flatten.uniq
+  self.flatten.uniq
 end 
 =end 
 
