@@ -31,7 +31,7 @@ class EmailAddressParser
     #binding.pry
     parsed.each do |email| 
       if email.endwith?(',')
-        
+        email = email.substring(0, email.length() - 1)
     parsed.uniq
   end 
   
